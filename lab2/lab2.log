@@ -1,0 +1,287 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2018.8.22)  9 OCT 2018 14:56
+entering extended mode
+**lab2.tex
+(C:\Users\Administrator\Desktop\lab\lab2\lab2.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for loaded.
+(D:\软件夹\CTEX\MiKTeX\tex\latex\base\article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(D:\软件夹\CTEX\MiKTeX\tex\latex\base\size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(D:\软件夹\CTEX\MiKTeX\tex\latex\graphics\graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(D:\软件夹\CTEX\MiKTeX\tex\latex\graphics\keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(D:\软件夹\CTEX\MiKTeX\tex\latex\graphics\graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(D:\软件夹\CTEX\MiKTeX\tex\latex\graphics\trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(D:\软件夹\CTEX\MiKTeX\tex\latex\00miktex\graphics.cfg
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(D:\软件夹\CTEX\MiKTeX\tex\latex\pdftex-def\pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(D:\软件夹\CTEX\MiKTeX\tex\generic\oberdiek\infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
+)
+(D:\软件夹\CTEX\MiKTeX\tex\generic\oberdiek\ltxcmds.sty
+Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count87
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+(D:\软件夹\CTEX\MiKTeX\tex\latex\subfigure\subfigure.sty
+Package: subfigure 2002/07/30 v2.1.4 subfigure package
+\subfigtopskip=\skip43
+\subfigcapskip=\skip44
+\subfigcaptopadj=\dimen105
+\subfigbottomskip=\skip45
+\subfigcapmargin=\dimen106
+\subfiglabelskip=\skip46
+\c@subfigure=\count88
+\c@lofdepth=\count89
+\c@subtable=\count90
+\c@lotdepth=\count91
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(D:\软件夹\CTEX\MiKTeX\tex\latex\subfigure\subfigure.cfg)
+\subfig@top=\skip47
+\subfig@bottom=\skip48
+)
+(D:\软件夹\CTEX\MiKTeX\tex\latex\oberdiek\epstopdf.sty
+Package: epstopdf 2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)
+
+(D:\软件夹\CTEX\MiKTeX\tex\latex\oberdiek\epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(D:\软件夹\CTEX\MiKTeX\tex\latex\oberdiek\grfext.sty
+Package: grfext 2010/08/19 v1.1 Managing graphics extensions (HO)
+
+(D:\软件夹\CTEX\MiKTeX\tex\generic\oberdiek\kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Defining keys (HO)
+))
+(D:\软件夹\CTEX\MiKTeX\tex\latex\oberdiek\kvoptions.sty
+Package: kvoptions 2010/12/23 v3.10 Keyval support for LaTeX options (HO)
+
+(D:\软件夹\CTEX\MiKTeX\tex\generic\oberdiek\kvsetkeys.sty
+Package: kvsetkeys 2011/04/07 v1.13 Key value parser (HO)
+
+(D:\软件夹\CTEX\MiKTeX\tex\generic\oberdiek\etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Prefix for e-TeX command names (HO)
+
+(D:\软件夹\CTEX\MiKTeX\tex\generic\oberdiek\ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+(D:\软件夹\CTEX\MiKTeX\tex\generic\oberdiek\pdftexcmds.sty
+Package: pdftexcmds 2011/04/22 v0.16 Utilities of pdfTeX for LuaTeX (HO)
+
+(D:\软件夹\CTEX\MiKTeX\tex\generic\oberdiek\ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+))
+(C:\Users\Administrator\Desktop\lab\lab2\lab2.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+
+(D:\软件夹\CTEX\MiKTeX\tex\context\base\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count92
+\scratchdimen=\dimen107
+\scratchbox=\box26
+\nofMPsegments=\count93
+\nofMParguments=\count94
+\everyMPshowfont=\toks15
+\MPscratchCnt=\count95
+\MPscratchDim=\dimen108
+\MPnumerator=\count96
+\makeMPintoPDFobject=\count97
+\everyMPtoPDFconversion=\toks16
+) <Ant.png, id=1, 462.528pt x 344.0052pt>
+File: Ant.png Graphic file (type png)
+ <use Ant.png>
+Package pdftex.def Info: Ant.png used on input line 10.
+(pdftex.def)             Requested size: 462.52686pt x 344.00435pt.
+File: Ant.png Graphic file (type png)
+ <use Ant.png>
+Package pdftex.def Info: Ant.png used on input line 11.
+(pdftex.def)             Requested size: 114.76363pt x 85.35826pt.
+File: Ant.png Graphic file (type png)
+
+<use Ant.png>
+Package pdftex.def Info: Ant.png used on input line 12.
+(pdftex.def)             Requested size: 113.81102pt x 84.64682pt.
+
+Overfull \hbox (132.52686pt too wide) in paragraph at lines 10--13
+[][]
+ []
+
+<ant.png, id=3, 462.528pt x 344.0052pt>
+File: ant.png Graphic file (type png)
+ <use ant.png>
+Package pdftex.def Info: ant.png used on input line 18.
+(pdftex.def)             Requested size: 142.26378pt x 105.81114pt.
+File: ant.png Graphic file (type png)
+ <use ant.png>
+Package pdftex.def Info: ant.png used on input line 20.
+(pdftex.def)             Requested size: 142.26378pt x 105.81114pt.
+File: ant.png Graphic file (type png)
+
+<use ant.png>
+Package pdftex.def Info: ant.png used on input line 31.
+(pdftex.def)             Requested size: 72.26999pt x 53.75067pt.
+File: ant.png Graphic file (type png)
+ <use ant.png>
+Package pdftex.def Info: ant.png used on input line 38.
+(pdftex.def)             Requested size: 72.26999pt x 53.75067pt.
+File: ant.png Graphic file (type png)
+ <use ant.png>
+Package pdftex.def Info: ant.png used on input line 45.
+(pdftex.def)             Requested size: 72.26999pt x 53.75067pt.
+File: ant.png Graphic file (type png)
+ <use ant.png>
+Package pdftex.def Info: ant.png used on input line 52.
+(pdftex.def)             Requested size: 72.26999pt x 53.75067pt.
+
+Overfull \hbox (19.99997pt too wide) in paragraph at lines 31--54
+ [][][][][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: ant.png Graphic file (type png)
+<use ant.png>
+Package pdftex.def Info: ant.png used on input line 66.
+(pdftex.def)             Requested size: 85.35826pt x 63.48248pt.
+Package epstopdf Info: Source file: <figures/fly.eps>
+(epstopdf)                    date: 2017-07-10 12:09:10
+(epstopdf)                    size: 155104 bytes
+(epstopdf)             Output file: <figures/fly-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-10-08 10:31:31
+(epstopdf)                    size: 4236 bytes
+(epstopdf)             Command: <epstopdf --outfile=figures/fly-eps-converted-t
+o.pdf figures/fly.eps>
+(epstopdf)             \includegraphics on input line 72.
+Package epstopdf Info: Output file is already uptodate.
+ <figures/fly-eps-converted-to.pdf, id=4, 34.1275pt x 32.12pt>
+File: figures/fly-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/fly-eps-converted-to.pdf>
+Package pdftex.def Info: figures/fly-eps-converted-to.pdf used on input line 72
+.
+(pdftex.def)             Requested size: 85.35826pt x 80.34239pt.
+
+<figures/hopper.png, id=5, 462.528pt x 344.0052pt>
+File: figures/hopper.png Graphic file (type png)
+ <use figures/hopper.png>
+Package pdftex.def Info: figures/hopper.png used on input line 79.
+(pdftex.def)             Requested size: 85.35826pt x 63.48248pt.
+File: figures/hopper.png Graphic file (type png)
+
+<use figures/hopper.png>
+Package pdftex.def Info: figures/hopper.png used on input line 85.
+(pdftex.def)             Requested size: 85.35826pt x 63.48248pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: ant.png Graphic file (type png)
+<use ant.png>
+Package pdftex.def Info: ant.png used on input line 101.
+(pdftex.def)             Requested size: 72.26999pt x 53.75067pt.
+File: ant.png Graphic file (type png)
+ <use ant.png>
+Package pdftex.def Info: ant.png used on input line 108.
+(pdftex.def)             Requested size: 72.26999pt x 53.75067pt.
+File: ant.png Graphic file (type png)
+ <use ant.png>
+Package pdftex.def Info: ant.png used on input line 116.
+(pdftex.def)             Requested size: 72.26999pt x 53.75067pt.
+File: ant.png Graphic file (type png)
+ <use ant.png>
+Package pdftex.def Info: ant.png used on input line 123.
+(pdftex.def)             Requested size: 72.26999pt x 53.75067pt.
+
+Overfull \hbox (19.99997pt too wide) in paragraph at lines 101--124
+ [][][][][] 
+ []
+
+[1
+
+{D:/软件夹/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}} <C
+:/Users/Administrator/Desktop/lab/lab2/Ant.png>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[2 <C:/Users/Administrator/Desktop/lab/lab2/ant.png>] [3 <C:/Users/Administrato
+r/Desktop/lab/lab2/figures/fly-eps-converted-to.pdf> <C:/Users/Administrator/De
+sktop/lab/lab2/figures/hopper.png>]
+(C:\Users\Administrator\Desktop\lab\lab2\lab2.aux) ) 
+Here is how much of TeX's memory you used:
+ 1627 strings out of 495354
+ 22955 string characters out of 3183299
+ 75403 words of memory out of 3000000
+ 4791 multiletter control sequences out of 15000+200000
+ 3939 words of font info for 15 fonts, out of 3000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 42i,8n,27p,592b,308s stack positions out of 5000i,500n,10000p,200000b,50000s
+<D:/软件夹/CTEX/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmr10.pfb><D:/软件夹/CTEX/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmr8.pfb>
+Output written on lab2.pdf (3 pages, 270886 bytes).
+PDF statistics:
+ 30 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+

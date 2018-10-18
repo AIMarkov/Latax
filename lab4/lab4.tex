@@ -1,0 +1,38 @@
+\documentclass{article}
+\usepackage{multirow}%一行显示多行
+\begin{document}
+
+
+
+    \begin{table}[h]
+    \centering
+      \begin{tabular}{c|c|c}
+        \hline\hline
+        % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+       one& two & three \\
+       \hline
+       \multirow{2}*{chenhongming}& 2 & 3 \\
+        ~& 5 & 6 \\
+        \hline
+        9 & 8 & 7 \\
+        \hline
+        10 & 11 & 12 \\
+        \hline
+      \end{tabular}
+
+    \end{table}
+
+
+
+    \begin{table}
+    	\centering
+    	\begin{tabular}{|c|c|c|c|}
+    		\hline
+    		\multirow{2}* {one}& two & three & four \\
+    		~ & 2 & 3 & 4 \\
+    		\hline
+    	\end{tabular}
+    \end{table}
+
+
+\end{document} 

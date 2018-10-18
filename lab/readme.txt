@@ -1,3 +1,3 @@
-åˆ›å»ºç›®å½•ï¼šBibTexæ–‡ä»¶å¯ä»¥ç”¨JabRefåˆ›å»º
-ç¼–è¯‘ï¼šå¯¹äºŽtexæ–‡ä»¶ï¼Œé¦–å…ˆç”¨PDFLataxç¼–è¯‘ä¸€æ¬¡ï¼Œç„¶åŽç”¨BibTaxç¼–è¯‘ï¼Œç„¶åŽç”¨PDFLataxç¼–è¯‘ä¸¤æ¬¡ã€‚
-æ¯æ¬¡é‡æ–°ç¼–è¯‘éƒ½è¦æŠŠä»¥å‰ç”Ÿæˆçš„æ–‡ä»¶åˆ é™¤
+´´½¨Ä¿Â¼£ºBibTexÎÄ¼þ¿ÉÒÔÓÃJabRef´´½¨
+±àÒë£º¶ÔÓÚtexÎÄ¼þ£¬Ê×ÏÈÓÃPDFLatax±àÒëÒ»´Î£¬È»ºóÓÃBibTax±àÒë£¬È»ºóÓÃPDFLatax±àÒëÁ½´Î¡£
+Ã¿´ÎÖØÐÂ±àÒë¶¼Òª°ÑÒÔÇ°Éú³ÉµÄÎÄ¼þÉ¾³ý

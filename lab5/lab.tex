@@ -1,0 +1,33 @@
+    \documentclass[twoside,12pt]{article}
+    \usepackage{longtable}
+
+    \begin{document}
+
+    \begin{longtable}{|c|c|r|r|r|r|r|r|r|l|}
+        \caption{caption}
+        \label{table:label}  \\ % add \\ command to tell LaTeX to start a new line
+
+        % Appear table header at the first page as well
+        \hline
+        line1   &   line2   &   $t_1$       &   $t_{12}$    &   $t_2$       &   $r$(\%)&    $D$(GB)&    $D_{nc}(GB)$&$G_t$(\%)&Station\\
+        \hline
+        \endfirsthead
+
+        % Appear the table header at the top of every page
+        \hline
+        line1   &   line2   &   $t_1$       &   $t_{12}$    &   $t_2$       &   $r$(\%)&    $D$(GB)&    $D_{nc}(GB)$&$G_t$(\%)&Station\\
+        \hline
+        \endhead
+
+        % Appear \hline at the bottom of every page
+        \hline
+        \endfoot
+
+        % data begins here
+        10  &   2       &   0:22:00 &   9:46:00 &   2:00:00 &   80.49   &   159.18  &   302.25  &   89.88   &   Cours Dillon    \\
+        204 &   205 &   2:01:00 &   2:57:00 &   1:11:00 &   47.97   &   95.21   &   138.43  &   45.38   &   Ayguevives Collège  \\
+        % more data here
+        \hline
+    \end{longtable}
+
+    \end{document}

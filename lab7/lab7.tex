@@ -1,0 +1,84 @@
+\documentclass{article}
+\usepackage{cite}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\begin{document}
+
+\begin{equation}
+  \begin{split}
+     Q^{\pi}\left ( s_{t},a_{t} \right )=&x \\
+   &y
+  \end{split}
+\end{equation}
+
+\begin{equation}
+  \triangledown
+\end{equation}
+
+
+\begin{equation}
+\begin{split}
+\triangledown_{\theta^{\mu}}J & \approx \mathbb{E}_{s_{t}\sim S}\left [ \triangledown _{\theta^{\mu}}Q\left ( s,a\mid\theta^{Q} \right )\mid_{s=s_{t},a=\pi\left ( s_{t}\mid\theta_{t}^{\mu } \right )} \right ]\\
+&=\mathbb{E}_{s_{t}\sim S}[ \triangledown_{a}Q\left ( s,a\mid \theta^Q \right )\mid_{s=s_{t},a=\pi\left ( s_{t}\mid\theta_{t}^{\mu} \right )} \\
+&\triangledown_{\theta^{\mu}}\pi\left ( s\mid\theta^{\mu} \right )\mid_{s=s_{t}}  ]
+\end{split}
+\end{equation}
+
+\begin{equation}
+  L\left ( \theta^{E} \right )=\mathbb{E}\left [ \left( E \left (o_{t}\mid\theta_{t}^{E} \right )-a_{t} \right )^2 \right]
+\end{equation}
+
+%Algorithm
+\begin{table}[htbp]
+  \centering
+  \begin{tabular}{l}
+    \hline\hline
+    % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+    Algorithm 1 PACEE\\
+    \hline
+    (The encoder layers are included in actor network) \\
+    Randomly initialize critic network and actor network with weights $\theta_{Q}$, $\theta_{1}^{\mu},\theta_{2}^{\mu},\cdots,\theta_{n}^{\mu}$\\
+    Randomly initialize experience network with weights$\theta^{E}$\\
+    Initialize target network $\theta^{{Q}'}\leftarrow \theta^{Q}, \theta_{1}^{{\mu}'}\leftarrow \theta_{1}^{\mu}, \theta_{2}^{{\mu}'}\leftarrow \theta_{2}^{\mu},\cdots,\theta_{n}^{{\mu}'}\leftarrow \theta_{n}^{\mu}$\\
+    Randomly initialize experience network with weights $\theta^{E}$\\
+    Initialize replay buffer $D_1,D_2,\cdots,D_n,{D}'$\\
+    For $episode=1,2,\cdots,M$ do:\\
+    \quad Initialize episode return $G=0$\\
+    \quad Initialize an empty episode track $Tr$\\
+    \quad Receive initial state $s_1$\\
+    \quad For $t=1,2,\cdots,T$ do:\\
+    \qquad Judge the stage of the time step $n$\\
+    \qquad Select action and get observation:$a_t,o_t=\pi\left(s_t,\mid \theta_{t,n}^{\mu}\right)$\\
+    \qquad Add positive guidance:$a_t=a_t+\left(E\left(o_t\mid\theta_{t,n}^{E}\right)-a_{t}\right)\xi$\\
+    \qquad Execute action $a_{t}$ and observe reward $r_{t+1}$ and new state $s_{t+1}$ \\
+    \qquad Accumulate return $G=G+r_{t+1}$  \\
+    \qquad Store $(s_t,a_t,r_{t+1},s_{t+1})$ and  $(o_t,a_t,r_{t+1},s_{t+1})$ in $D_{n}$ and $Tr$ respectively \\
+    \qquad Sample a random minibatch of $N$ transitions $(s_i,a_i,r_{i+1},s_{i+1})$ from $D_n$ \\
+    \qquad Calculate:$q_{i+1}=Q\left(s_{i+1},\pi(s_{i+1}\mid\theta_{t,n}^{{\mu}'})\mid\theta_{t}^{{Q}'}\right)$  \\
+    \qquad Add positive guidance:$q_{i+1}=q_{i+1}+\left(Q\left(s_{i+1},E\left(o_{i+1}\mid\theta_{t,n}^{E}\right)\theta_{t}^{{Q}'}\right)-q_{i+1}\right)\xi$\\
+    \qquad Set:$y_i=r_{i+1}+\gamma q_{i+1}\phi$\\
+    \qquad Calculate gradients wrt $\theta^{Q}$  and update critic network:\\
+    \qquad\qquad\qquad $d\theta^{Q}\leftarrow\frac{1}{N}\triangledown_{\theta^{Q}}\sum_{i}\left[\left(Q\left(s_i,a_i\mid\theta^{Q}_{t}\right)-y_i\right)^2\right] $\\
+    \qquad Calculate gradients wrt $\theta^{\mu}_{n}$ and update actor network:\\
+    \qquad\qquad\qquad $d\theta_{n}^{\mu}\leftarrow\frac{1}{N}\sum_i\left[\triangledown_{a}Q\left(s,a\mid\theta_{t}^{Q}\right)\mid_{s=s_i,a=\pi\left(s_i\mid\theta^{\mu}_{t,n}\right)}\triangledown_{\theta_{n}^{\mu}}\pi\left(s\mid\theta_{t,n}^{\mu}\right)\mid_{s=s_i}\right]$\\
+    \qquad  Sample a random minibatch of $N$ transitions $(o_k,a_k,r_{k+1},s_{k+1})$ from ${D}'$  \\
+    \qquad  Calculate gradients wrt  $\theta^{E}$ and update experience network:\\
+    \qquad\qquad\qquad $d\theta^{E}\leftarrow\frac{1}{N}\triangledown_{\theta^{E}}\sum_k\left[\left(E\left(o_k\mid \theta^{E}_{t}\right)-a_k\right)^2\right]$\\
+    \qquad Update the target network:$\theta_{t+1}^{{Q}'}\leftarrow\tau\theta_{t}^{Q}+\left(1-\tau\right)\theta_{t}^{{Q}'}$,$\theta_{t+1,n}^{{\mu}'}\leftarrow\tau\theta_{t,n}^{\mu}+\left(1-\tau\right)\theta_{t,n}^{{\mu}'}$\\
+    \quad End for\\
+    \quad If $G\geq\bar{R}_K$ ,then store $Tr$ into${D}'$  \\
+    End for\\
+    \hline
+  \end{tabular}
+
+\end{table}
+\section{introduction}
+aaaaaaaaaaaaaaaaaasssssssssssssssssssssssssdddddddddddddddddaaaaaaaaaaaaaaaaaassssssssssssssss
+sssssssssdddddddddddddddddaaaaaaaaaaaaaaaaaasssssssssssssssssssssssssdddddddddddddddddaaaaaaaaaaaa
+aaaaaasssssssssssssssssssssssssdddddddddddddddddaaaaaaaaaaaaaaaaaasssssssssssssssssssssssssddddddddddddd
+ddddaaaaaaaaaaaaaaaaaasssssssssssssssssssssssssdddddddddddddddddaaaaaaaaaaaaaaaaaasssssssssssssssssssssss
+ssdddddddddddddddddaaaaaaaaaaaaaaaaaasssssssssssssssssssssssssdddddddddddddddddaaaaaaaaaaaaaaaaaasssssssssss
+ssssssssssssssdddddddddddddddddaaaaaaaaaaaaaaaaaasssssssssssssssssssssssssddddddddddddddddd
+
+\end{document} 

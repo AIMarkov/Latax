@@ -1,0 +1,25 @@
+\documentclass{article}
+\begin{document}
+\begin{tabular}{c l l l p{1.5cm}}
+  \hline\hline
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+  environment & method & average & max & varience  \\
+  \hline
+  ant & DDPG & 60.78 & 90 & 30 \\
+  hopper & PACEE & 78.40 & 98 & 40\\
+  \hline
+\end{tabular}
+\begin{table}
+  \centering
+  \caption{test table}\label{test}
+  \begin{tabular}{|l|c|c|}
+    \hline
+    % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+    1& 2 & 2 \\
+    3 & 4 & 5 \\
+    6 & 7& 8 \\
+    \hline
+  \end{tabular}
+  
+\end{table}
+\end{document} 
